@@ -21,10 +21,6 @@
 //   document.getElementById('courses').scrollIntoView({behavior:'smooth'});
 // });
 
-/* ===== account / notif (نمونه) ===== */
-document.getElementById('accountBtn').addEventListener('click', (e)=>{
-  alert('پنل حساب کاربری — اینجا می‌توانید سیستم ورود/ثبت‌نام را وصل کنید.');
-});
 
 /* ===== Blueprint line drawing هنگام اسکرول ===== */
 const blueprint = document.getElementById('blueprintCanvas');
@@ -118,30 +114,33 @@ window.addEventListener('scroll', ()=>{
 
 
 // question
- const buttons = document.querySelectorAll(".accordion-button");
 
+const buttons = document.querySelectorAll(".accordion-button");
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
       const panel = btn.nextElementSibling;
-      const icon = btn.querySelector(".accordion-icon");
       const isActive = btn.classList.contains("active");
 
       // بستن همه
       document.querySelectorAll(".accordion-button").forEach((b) => {
         b.classList.remove("active");
         b.nextElementSibling.classList.remove("show");
-        b.querySelector(".accordion-icon").textContent = "+";
       });
 
       // باز کردن همونی که کلیک شد
       if (!isActive) {
         btn.classList.add("active");
         panel.classList.add("show");
-        icon.textContent = "−";
       }
-    });
-  });
+     });
+});
 
+
+function ScrollToTop() {
+ "use strict";
+ document.body.scrollTop = 0; // For Safari
+ document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 
 

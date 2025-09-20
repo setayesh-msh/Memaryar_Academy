@@ -25,13 +25,14 @@
  /* NORMALIZE */
 /* --------- */
 *{
-    direction: rtl;
-    box-sizing: border-box;
+  direction: rtl;
+  box-sizing: border-box;
+  font-family:Parastoo,sans-serif !important;
 }
 
-body {
-  font-family: Parastoo,sans-serif !important;
-}
+/* body {
+  font-family:Parastoo,sans-serif !important;
+} */
 
 
  /* تنظیمات پالت و فونت  */
@@ -62,7 +63,7 @@ a{ color:inherit; text-decoration:none; }
 .container{ max-width:1200px; margin:0 auto; padding:0 20px; }
 
 /* TOP PROMO BAR */
-#promoBar{
+/* #promoBar{
   background: linear-gradient(90deg, rgba(193,153,91,0.08), rgba(79,138,107,0.03));
   color:var(z--green-dark);
   display:flex;
@@ -73,7 +74,7 @@ a{ color:inherit; text-decoration:none; }
   position:relative;
   z-index:70;
 }
-#promoBar .close{ opacity:.7; cursor:pointer; border:0; background:transparent; padding:4px 8px; }
+#promoBar .close{ opacity:.7; cursor:pointer; border:0; background:transparent; padding:4px 8px; } */
 
 /* HEADER */
 header{ position:sticky; top:0; backdrop-filter: blur(var(--glass-blur)); background:rgba(255,255,255,0.6); z-index:60; box-shadow:0 4px 18px rgba(15,20,10,0.04); }
@@ -191,6 +192,9 @@ nav.mainnav a:hover{ background:rgba(15,91,72,0.06); color:var(--green-dark); tr
 .project:hover img{ transform:scale(1.06); }
 .project:hover .overlay{ opacity:1; }
 
+/*  enrollment  */
+.btn-primary:hover{ background:rgba(15,91,72,0.06); color:var(--green-dark); transform:translateY(-3px); }
+
 /* lightbox */
 .lightbox{ position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,0.6); z-index:120; padding:20px; }
 .lightbox .card{ max-width:980px; width:100%; background:#fff; border-radius:12px; overflow:hidden; }
@@ -215,99 +219,65 @@ footer{ margin-top:40px; background:linear-gradient(180deg,#efe8dd,#f8f6f3); pad
 }
 
 /* Question box */
-  /* Question box */
-  .accordion {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 20px auto;
-    overflow: hidden;
-    font-family: sans-serif;
-  }
 
-  .accordion-item {
-    border-top: 1px solid #ddd;
-  }
+.accordion {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden;
+  font-family: sans-serif;
+}
 
-  .accordion-item:first-child {
-    border-top: none;
-  }
+.accordion-item {
+  border-top: 1px solid #ddd;
+}
 
-  .accordion-button {
-    width: 100%;
-    background: #f9f9f9;
-    border: none;
-    outline: none;
-    padding: 16px;
-    text-align: left;
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.accordion-item:first-child {
+  border-top: none;
+}
 
-  .accordion-button:hover {
-    background: #f1f1f1;
-  }
+.accordion-button {
+  width: 100%;
+  background: #f9f9f9;
+  border: none;
+  outline: none;
+  padding: 16px;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .accordion-icon {
-    font-weight: bold;
-    transition: transform 0.3s ease;
-  }
+.accordion-button:hover {
+  background: #f1f1f1;
+}
 
-  .accordion-panel {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.3s ease;
-    padding: 0 16px;
-    background: #fff;
-    font-size: 14px;
-    color: #333;
-  }
+/* .accordion-title {
+  flex: 1;
+} */
 
-  .accordion-panel.show {
-    max-height: 500px; /* مقدار بزرگتر از ارتفاع متن */
-    padding: 16px;
-  }
+.accordion-icon {
+  transition: transform 0.3s ease;
+}
 
-/* enrollment */
-.form-card {
-      background: rgba(255, 255, 255, 0.9);
-      backdrop-filter: blur(12px);
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-      animation: fadeInUp 1s ease;
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .form-input {
-      border: none;
-      border-bottom: 2px solid #51703b;
-      background: transparent;
-      outline: none;
-      padding: 10px 5px;
-      font-size: 1rem;
-      transition: all 0.3s ease;
-    }
-    .form-input:focus {
-      border-color: #2c4020;
-    }
-    .btn-submit {
-      background: #51703b;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 12px;
-      transition: all 0.3s ease;
-    }
-    .btn-submit:hover {
-      background: #3c522c;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    }
+.accordion-button.active .accordion-icon {
+  transform: rotate(45deg); /* تغییر "+" به "x" */
+}
 
+.accordion-panel {
+  display: none;
+  padding: 16px;
+  background: #fff;
+  font-size: 14px;
+  color: #333;
+}
+
+.accordion-panel.show {
+  display: block;
+}
 
 
 
