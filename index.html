@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="./dist/output.css" rel="stylesheet">
+<link rel="stylesheet" href="./style/style.css">
+<title>معماریار — تجربهٔ حرفه‌ای معماری</title>
+</head>
+<body>
+
+<!-- PROMO -->
+<!-- <div id="promoBar">
+  <strong>تخفیف ویژه تابستان: تا <span style="color:var(--green-dark)">۵۰٪</span> روی ثبت‌نام زودهنگام</strong>
+  <button class="btn primary" id="promoCT">ثبت‌نام سریع</button>
+  <button class="close" id="closePromo">بستن ×</button>
+</div> -->
+
+<!-- HEADER -->
+<header>
+  <div class="container header-inner">
+    <!-- NAV -->
+    <nav class="mainnav" aria-label="ناوبری اصلی">
+      <a href="#">صفحه‌اصلی</a>
+      <a href="#courses">دوره‌ها</a>
+      <a href="#projects">نمونه‌کارها</a>
+      <a href="#certs">تأییدیه‌ها</a>
+      <a href="#contact">ارتباط با ما</a>
+    </nav>
+
+    <!-- LOGO -->
+    <div id="logo">
+      <div class="w-14 h-14">
+        <div class="bg-cover bg-no-repeat size-full" style="background-image:url(./images/Logo.png);width:100%;height:100%;"></div>
+      </div>
+
+      <div class="m-2">
+        <div style="font-weight:800; font-size:16px; color:#133823;">معماریار</div>
+        <div style="font-size:12px; color:var(--muted)">یار ماندگار در مسیر معماری</div>
+      </div>
+    </div>
+
+    <!-- ACTIONS -->
+    <div class="header-actions">
+      <svg id="notifBtn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="2em" height="2em" viewBox="0 0 50 50">
+        <path d="M 25 0 C 22.800781 0 21 1.800781 21 4 C 21 4.515625 21.101563 5.015625 21.28125 5.46875 C 15.65625 6.929688 12 11.816406 12 18 C 12 25.832031 10.078125 29.398438 8.25 31.40625 C 7.335938 32.410156 6.433594 33.019531 5.65625 33.59375 C 5.265625 33.878906 4.910156 34.164063 4.59375 34.53125 C 4.277344 34.898438 4 35.421875 4 36 C 4 37.375 4.84375 38.542969 6.03125 39.3125 C 7.21875 40.082031 8.777344 40.578125 10.65625 40.96875 C 13.09375 41.472656 16.101563 41.738281 19.40625 41.875 C 19.15625 42.539063 19 43.253906 19 44 C 19 47.300781 21.699219 50 25 50 C 28.300781 50 31 47.300781 31 44 C 31 43.25 30.847656 42.535156 30.59375 41.875 C 33.898438 41.738281 36.90625 41.472656 39.34375 40.96875 C 41.222656 40.578125 42.78125 40.082031 43.96875 39.3125 C 45.15625 38.542969 46 37.375 46 36 C 46 35.421875 45.722656 34.898438 45.40625 34.53125 C 45.089844 34.164063 44.734375 33.878906 44.34375 33.59375 C 43.566406 33.019531 42.664063 32.410156 41.75 31.40625 C 39.921875 29.398438 38 25.832031 38 18 C 38 11.820313 34.335938 6.9375 28.71875 5.46875 C 28.898438 5.015625 29 4.515625 29 4 C 29 1.800781 27.199219 0 25 0 Z M 25 2 C 26.117188 2 27 2.882813 27 4 C 27 5.117188 26.117188 6 25 6 C 23.882813 6 23 5.117188 23 4 C 23 2.882813 23.882813 2 25 2 Z M 27.34375 7.1875 C 32.675781 8.136719 36 12.257813 36 18 C 36 26.167969 38.078125 30.363281 40.25 32.75 C 41.335938 33.941406 42.433594 34.6875 43.15625 35.21875 C 43.515625 35.484375 43.785156 35.707031 43.90625 35.84375 C 44.027344 35.980469 44 35.96875 44 36 C 44 36.625 43.710938 37.082031 42.875 37.625 C 42.039063 38.167969 40.679688 38.671875 38.9375 39.03125 C 35.453125 39.753906 30.492188 40 25 40 C 19.507813 40 14.546875 39.753906 11.0625 39.03125 C 9.320313 38.671875 7.960938 38.167969 7.125 37.625 C 6.289063 37.082031 6 36.625 6 36 C 6 35.96875 5.972656 35.980469 6.09375 35.84375 C 6.214844 35.707031 6.484375 35.484375 6.84375 35.21875 C 7.566406 34.6875 8.664063 33.941406 9.75 32.75 C 11.921875 30.363281 14 26.167969 14 18 C 14 12.261719 17.328125 8.171875 22.65625 7.21875 C 23.320313 7.707031 24.121094 8 25 8 C 25.886719 8 26.679688 7.683594 27.34375 7.1875 Z M 21.5625 41.9375 C 22.683594 41.960938 23.824219 42 25 42 C 26.175781 42 27.316406 41.960938 28.4375 41.9375 C 28.792969 42.539063 29 43.25 29 44 C 29 46.222656 27.222656 48 25 48 C 22.777344 48 21 46.222656 21 44 C 21 43.242188 21.199219 42.539063 21.5625 41.9375 Z"></path>
+      </svg>
+      <span style="background:#e74c3c;color:#fff;padding:2px 8px;border-radius:999px;margin-left:8px;font-size:12px;position:absolute;left:16%;top:27%;">2</span>
+      <svg fill="#000000" width="3em" height="3em" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 27.9999 51.9063 C 41.0546 51.9063 51.9063 41.0781 51.9063 28 C 51.9063 14.9453 41.0312 4.0937 27.9765 4.0937 C 14.8983 4.0937 4.0937 14.9453 4.0937 28 C 4.0937 41.0781 14.9218 51.9063 27.9999 51.9063 Z M 27.9999 35.9922 C 20.9452 35.9922 15.5077 38.5 13.1405 41.3125 C 9.9999 37.7968 8.1014 33.1328 8.1014 28 C 8.1014 16.9609 16.9140 8.0781 27.9765 8.0781 C 39.0155 8.0781 47.8983 16.9609 47.9219 28 C 47.9219 33.1563 46.0234 37.8203 42.8593 41.3359 C 40.4921 38.5234 35.0546 35.9922 27.9999 35.9922 Z M 27.9999 32.0078 C 32.4999 32.0547 36.0390 28.2109 36.0390 23.1719 C 36.0390 18.4375 32.4765 14.5 27.9999 14.5 C 23.4999 14.5 19.9140 18.4375 19.9609 23.1719 C 19.9843 28.2109 23.4765 31.9609 27.9999 32.0078 Z"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" role="region" aria-label="بخش معرفی">
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <div class="floating-icons" aria-hidden="true">
+    <div class="icon-bubble" title="کمپس">
+      <!-- compass svg -->
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2v3" stroke="#0f5b48" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </div>
+    <div class="icon-bubble" title="خط‌کش">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 21L21 3" stroke="#0f5b48" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </div>
+    <div class="icon-bubble" title="طرح‌کشی">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" stroke="#0f5b48" stroke-width="1.6"/></svg>
+    </div>
+  </div>
+
+  <div class="container hero-left">
+    <h1>آموزشگاه تخصصی معماریار — مسیر حرفه‌ای، پروژه‌محور</h1>
+    <p>یادگیری معماری فراتر از تئوری است؛ اینجا با پروژه‌های واقعی، ابزار حرفه‌ای و منتورینگ کاربردی، مسیر شغلی‌ات را بساز.</p>
+    <div class="ctas">
+      <button class="btn primary" id="heroEnroll">ثبت‌نام دوره</button>
+      <button class="btn" id="heroContact">تماس با مشاور</button>
+    </div>
+  </div>
+
+  <div class="blueprint" aria-hidden="true">
+    <div class="sheet">
+      <h3>ویژگی‌ آموزشی</h3>
+      <div class="blue-lines" id="blueprintCanvas" aria-hidden="true">
+        <!-- در این بلوک یک انیمیشن سادهٔ «خط‌کشی» داریم؛ JS در اسکرول آن را فعال می‌کند -->
+      </div>
+      <div class="compass" aria-hidden="true">
+        <!-- نماد کمپس با انیمیشن دایره‌ای -->
+        <svg viewBox="0 0 64 64" width="68" height="68">
+          <circle cx="32" cy="32" r="30" fill="none" stroke="#d4e9e0" stroke-width="2"/>
+          <path d="M32 14 L38 34 L18 28 Z" fill="#0f5b48" opacity="0.95"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN -->
+<main>
+
+  <!-- معرفی آموزشگاه (بلور و خطوط) -->
+  <section class="container-section container" id="about">
+    <div class="section-title" role="heading" aria-level="2">
+      <svg width="22" height="22" viewBox="0 0 24 24" style="opacity:.9;margin-left:6px"><path d="M3 3h18v18H3z" fill="#c1995b"/></svg>
+      <strong>آموزشگاه تخصصی معماری — چرا معماریار؟</strong>
+    </div>
+
+    <div class="about">
+      <div class="card">
+        <!-- <h3 style="color:var(--green-dark);margin-bottom:8px">رویکرد ما</h3>
+        <p>
+          در معماریار، آموزش را به شکلی بازطراحی کرده‌ایم که دانشجو از روز اول روی پروژه کار کند: از تحقیق و کانسپت تا دیتیلینگ و ارائه.
+          <br><br>
+          از ابزارهای روز صنعت (Revit, Rhino, Grasshopper, Twinmotion) تا مهارت‌های حرفه‌ای (پورتفولیو، قرارداد، بازار کار) — همه در مسیر تبدیل‌شدن به معمار حرفه‌ای.
+        </p>
+        <div style="margin-top:18px; display:flex; gap:12px;">
+          <button class="btn primary" onclick="document.getElementById('courses').scrollIntoView({behavior:'smooth'})">مشاهده دوره‌ها</button>
+          <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">نمونه‌پروژه‌ها</button>
+        </div> -->
+        <div class="video-wrapper">
+          <video src="./videos/VID-20250918-WA0001.mp4" controls></video> <!-- controls برای کلیدهای ویدیو -->
+       </div>
+      </div>
+
+      <!-- <div style="display:flex;flex-direction:column;gap:14px;">
+        <div class="card" style="padding:16px;">
+          <strong style="color:var(--green-dark)">منتورها</strong>
+          <p style="margin-top:8px;font-size:14px;color:var(--muted)">تیم ما از معماران اجرایی و طراحان حرفه‌ای تشکیل شده‌اند که پروژه‌ها را در بازار کار تحویل داده‌اند.</p>
+        </div> -->
+
+        <div class="card" style="padding:12px; display:flex; gap:10px; align-items:center;">
+          <div style="width:74px;height:74px;border-radius:8px;background:linear-gradient(135deg,#fff,#f1f1f1); display:flex;align-items:center;justify-content:center;">
+            <!-- placeholder profile -->
+            <svg width="44" height="44"><circle cx="22" cy="16" r="10" fill="#e2e2e2"/><rect x="8" y="30" width="28" height="10" rx="4" fill="#e2e2e2"/></svg>
+          </div>
+          <div>
+            <div style="font-weight:800">مهندس معماری ماریه اله دینی </div>
+            <div style="font-size:13px;color:var(--muted)">مهندس پایه 2 طراحی و اجرا از سازمان نظام مهندسی</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- تأییدیه‌ها -->
+  <section class="container" id="certs" style="padding-bottom:30px;">
+    <div class="section-title">
+      <strong>تأییدیه‌ها و همکاران</strong>
+    </div>
+
+    <div class="cert-carousel" id="certCarousel" aria-live="polite">
+      <!-- آیتم‌ها را با تصاویر واقعی جایگزین کنید -->
+      <div class="cert-item"><img src="./images/cert1.png" alt="گواهی ۱"><div><strong>انجمن X</strong><div style="font-size:12px;color:var(--muted)">عضویت رسمی</div></div></div>
+      <div class="cert-item"><img src="./images/cert2.png" alt="گواهی ۲"><div><strong>شرکت Y</strong><div style="font-size:12px;color:var(--muted)">همکاری پروژه‌ای</div></div></div>
+      <div class="cert-item"><img src="./images/cert3.png" alt="گواهی ۳"><div><strong>وزارت ز</strong><div style="font-size:12px;color:var(--muted)">تأیید کیفیت</div></div></div>
+      <div class="cert-item"><img src="./images/cert4.png" alt="گواهی ۴"><div><strong>پارتر Q</strong><div style="font-size:12px;color:var(--muted)">پشتیبانی فنی</div></div></div>
+    </div>
+  </section>
+
+  <!-- دوره‌ها -->
+  <section id="courses" class="container container-section" aria-label="دوره‌ها">
+    <div class="section-title"><strong>دوره‌ها</strong><span style="margin-left:auto;color:var(--muted)">دوره‌ها را انتخاب کن و با پروژه شروع کن</span></div>
+
+    <div class="courses-grid" id="coursesGrid">
+      <!-- هر کارت را می‌تونید با دادهٔ واقعی پر کنید -->
+      <div class="sticky-wrap" data-course="آموزشی">
+        <div class="sticky-bg"></div>
+        <div class="sticky-card" tabindex="0" role="button" aria-pressed="false">
+          <div class="pill">پایه</div>
+          <div style="text-align:center;">آموزشی<br><small style="font-weight:600;color:var(--muted)">شروع از پایه تا اجرا</small></div>
+        </div>
+      </div>
+
+      <div class="sticky-wrap" data-course="بازار کار">
+        <div class="sticky-bg"></div>
+        <div class="sticky-card" tabindex="0">
+          <div class="pill">پیشرفته</div>
+          <div style="text-align:center;">بازار کار<br><small style="font-weight:600;color:var(--muted)">قرارداد و پروژه</small></div>
+        </div>
+      </div>
+
+      <div class="sticky-wrap" data-course="آزمون">
+        <div class="sticky-bg"></div>
+        <div class="sticky-card" tabindex="0">
+          <div class="pill">تضمینی</div>
+          <div style="text-align:center;">آزمون فنی و حرفه‌ای<br><small style="font-weight:600;color:var(--muted)">آمادگی تخصصی</small></div>
+        </div>
+      </div>
+
+      <div class="sticky-wrap" data-course="کارگاه">
+        <div class="sticky-bg"></div>
+        <div class="sticky-card" tabindex="0">
+          <div class="pill">کارگاهی</div>
+          <div style="text-align:center;">کارگاهی<br><small style="font-weight:600;color:var(--muted)">عملی و تعاملی</small></div>
+        </div>
+      </div>
+
+      <div class="sticky-wrap" data-course="کنکور">
+        <div class="sticky-bg"></div>
+        <div class="sticky-card" tabindex="0">
+          <div class="pill">مقدماتی</div>
+          <div style="text-align:center;">کنکور معماری<br><small style="font-weight:600;color:var(--muted)">آمادگی ورود</small></div>
+        </div>
+      </div>
+
+      <div class="sticky-wrap" data-course="هوش مصنوعی">
+        <div class="sticky-bg"></div>
+        <div class="sticky-card" tabindex="0">
+          <div class="pill">نوآور</div>
+          <div style="text-align:center;">هوش مصنوعی در معماری<br><small style="font-weight:600;color:var(--muted)">رندر، پارامتریک</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- نمونه پروژه‌ها -->
+  <section id="projects" class="container container-section">
+    <div class="section-title"><strong>نمونه‌ پروژه‌ها</strong><span style="margin-left:auto;color:var(--muted)">پروژه‌های منتخب دانشجویان و تیم</span></div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <div class="project" data-img="./images/project1.jpg" aria-label="پروژه طراحی داخلی">
+        <img src="./images/project1.jpg" alt="پروژه ۱">
+        <div class="overlay"><div><strong>طراحی داخلی مجموعه A</strong><div style="font-size:12px;">متریال نوآور</div></div></div>
+      </div>
+      <div class="project" data-img="./images/project2.jpg" aria-label="پروژه بازسازی">
+        <img src="./images/project5.jpg" alt="پروژه ۲">
+        <div class="overlay"><div><strong>بازسازی خانه تاریخی</strong><div style="font-size:12px;">حفظ میراث، ارتقاء عملکرد</div></div></div>
+      </div>
+      <div class="project" data-img="./images/" aria-label="پروژه شهری">
+        <img src="./images/project6.jpg" alt="پروژه ۳">
+        <div class="overlay"><div><strong>پلازای شهری</strong><div style="font-size:12px;">فضای عمومی و تعامل</div></div></div>
+      </div>
+    </div>
+  </section>
+
+<section class="container container-section">
+  <!-- Question -->
+  <div class="section-title">
+    <strong>سوالات متداول </strong>
+    <span style="margin-left:auto;color:var(--muted)">پروژه‌های منتخب دانشجویان و تیم</span>
+  </div>
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <button class="accordion-button">
+        <span class="accordion-title">بخش اول</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-panel">
+        این یک متن آزمایشی است برای نمایش محتوای بخش اول آکاردئون. شما می‌توانید
+        هر نوع متن یا محتوایی را در اینجا قرار دهید.
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-button">
+        <span class="accordion-title">بخش دوم</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-panel">
+        این هم یک متن نمونه دیگر برای بخش دوم. محتوای این قسمت می‌تواند شامل
+        متن، تصاویر یا هر عنصر HTML دیگر باشد.
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-button">
+        <span class="accordion-title">بخش سوم</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-panel">
+        این هم یک متن نمونه دیگر برای بخش سوم. محتوای این قسمت می‌تواند شامل
+        متن، تصاویر یا هر عنصر HTML دیگر باشد.
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="card">
+    <button id="closeLight" style="float:left;border:0;background:transparent;padding:12px;font-size:20px;">✕</button>
+    <img id="lightImg" src="" alt="" style="width:100%;height:70vh;object-fit:contain;background:#000"/>
+    <div style="padding:12px; display:flex; justify-content:space-between; align-items:center;">
+      <div id="lightTitle" style="font-weight:800"></div>
+      <button class="btn primary" id="lightEnroll">ثبت‌نام در این دوره</button>
+    </div>
+  </div>
+</div>
+
+<!-- enrollment -->
+<section id="registerForm" class="hidden fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+    <div class="form-card w-full max-w-lg p-10 relative">
+      <!-- دکمه بستن -->
+      <button id="closeFormBtn" class="absolute top-3 right-3 text-[#2c4020] text-2xl font-bold">✕</button>
+
+      <h1 class="text-3xl font-bold text-center text-[#2c4020] mb-8">ثبت‌نام در آموزشگاه معماریار</h1>
+      
+      <form action="submit.php" method="POST" class="space-y-6">
+        
+        <!-- نام و نام خانوادگی -->
+        <div>
+          <label class="block mb-2 text-[#2c4020] font-semibold">نام و نام خانوادگی <strong class="text-red-700">*</strong></label>
+          <input type="text" name="fullname" class="form-input w-full" required>
+        </div>
+
+        <!-- کد ملی -->
+        <div>
+          <label class="block mb-2 text-[#2c4020] font-semibold">کد ملی<strong class="text-red-700">*</strong></label>
+          <input type="text" name="national_id" class="form-input w-full" maxlength="10" required>
+        </div>
+
+        <!-- شماره تماس -->
+        <div>
+          <label class="block mb-2 text-[#2c4020] font-semibold">شماره تماس<strong class="text-red-700">*</strong></label>
+          <input type="tel" name="phone" class="form-input w-full" pattern="[0-9]{11}" placeholder="0912xxxxxxx" required>
+        </div>
+
+        <!-- ایمیل -->
+        <div>
+          <label class="block mb-2 text-[#2c4020] font-semibold">ایمیل</label>
+          <input type="email" name="email" class="form-input w-full" required>
+        </div>
+
+        <!-- دکمه -->
+        <div class="flex justify-center pt-4">
+          <button type="submit" class="btn-primary">ثبت‌نام</button>
+        </div>
+      </form>
+    </div>
+  </section>
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;justify-items:center;">
+    <div>
+      <!-- <div class="w-20 h-20">
+        <div class="w-full h-full bg-cover" style="background-image: url(./images/tourist.png);"></div>
+      </div> -->
+      <h3 style="margin:0 0 2em;color:var(--green-dark)">آدرس</h3>
+      <iframe title="map-iframe" src="https://neshan.org/maps/iframe/places/_bPoI6WjUJOu#c30.297-57.031-22z-0p/30.29697669290357/57.03091621706535"
+       width="450" height="300" allowFullScreen loading="lazy"></iframe>
+    </div>
+    <div>
+      <h3 style="margin:0 0 2em;color:var(--green-dark)">راه های ارتباط با ما</h3>
+      <div class="flex flex-row mb-3">
+        <!-- Call Img -->
+        <svg class="ml-2" height="2em" width="2em" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+       viewBox="0 0 512 512"  xml:space="preserve">
+       <style type="text/css">.st0{fill:#000000;}</style>
+       <g>
+        	<path class="st0" d="M403.854,409.684c-17.68-14.106-72.76-41.247-86.349-44.375c-13.562-3.154-29.98,9.962-34.501,26.248
+        		c-4.547,16.295-13.027,14.753-13.027,14.753s-32.67-12.003-92.429-71.534c-59.769-59.549-71.85-92.175-71.85-92.175
+        		s-1.595-8.48,14.692-13.089c16.252-4.564,29.314-21.035,26.125-34.598c-3.171-13.562-30.532-68.563-44.69-86.165
+        		c-14.192-17.601-41.606-8.524-47.633-4.135C48.13,108.987-15.581,149.49,3.58,224.072
+        		c19.186,74.592,60.346,134.264,105.579,179.348c45.242,45.066,105.062,85.998,179.715,104.904
+        		c74.644,18.915,114.919-44.944,119.274-51.006C412.51,451.273,421.481,423.816,403.854,409.684z"/>
+        	<path class="st0" d="M247.023,189.177c9.9,4.854,25.644,13.86,43.893,32.1c18.25,18.25,27.247,33.993,32.1,43.884
+        		c5.099,10.4,8.866,12.494,11.915,11.784c5.029-1.166,6.702-2.515,7.167-13.001c0.385-8.936-3.89-35.588-31.076-62.773
+        		c-27.186-27.186-53.846-31.452-62.764-31.067c-10.496,0.447-11.828,2.129-12.992,7.175
+        		C234.555,180.311,236.623,184.087,247.023,189.177z"/>
+        	<path class="st0" d="M262.95,84.247c-12.808-0.009-16.042,7.92-16.428,10.995c-0.788,6.212,3.794,11.249,13.308,13.974
+        		c10.881,3.11,53.986,16.935,90.099,53.048c36.122,36.113,49.956,79.226,53.057,90.107c2.716,9.506,7.744,14.08,13.964,13.3
+        		c3.092-0.369,11.012-3.61,10.995-16.418c0.009-10.137-6.186-63.22-53.986-111.038C326.17,90.423,273.06,84.237,262.95,84.247z"/>
+        	<path class="st0" d="M437.304,74.889C368.836,6.422,296.602,0.526,284.187,0.201c-15.157-0.385-21.167,6.414-21.158,13.387
+        		c-0.009,5.94,6.08,12.046,15.139,14.377c13.597,3.486,67.495,11.976,130.784,75.266c63.307,63.29,71.78,117.197,75.284,130.803
+        		c2.322,9.041,8.437,15.139,14.368,15.139c6.982,0,13.781-6.002,13.378-21.149C511.667,215.601,505.771,143.366,437.304,74.889z"/>
+        </g>
+        </svg>
+        <a href="tel:+989121234567"class="group fixed bottom-4 right-4 flex items-center justify-center bg-brandGreen text-black rounded-full shadow-lg px-4 py-4 overflow-hidden transition-all duration-300 w-14 hover:w-40">
+         <!-- آیکن تلفن -->
+          <svg class="ml-2 h-6 w-6 flex-shrink-0 transition-transform duration-300 group-hover:mr-2"
+           version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+           <path fill="#000000"
+            d="M403.854,409.684c-17.68-14.106-72.76-41.247-86.349-44.375c-13.562-3.154-29.98,9.962-34.501,26.248
+            c-4.547,16.295-13.027,14.753-13.027,14.753s-32.67-12.003-92.429-71.534c-59.769-59.549-71.85-92.175-71.85-92.175
+            s-1.595-8.48,14.692-13.089c16.252-4.564,29.314-21.035,26.125-34.598c-3.171-13.562-30.532-68.563-44.69-86.165
+            c-14.192-17.601-41.606-8.524-47.633-4.135C48.13,108.987-15.581,149.49,3.58,224.072
+            c19.186,74.592,60.346,134.264,105.579,179.348c45.242,45.066,105.062,85.998,179.715,104.904
+            c74.644,18.915,114.919-44.944,119.274-51.006C412.51,451.273,421.481,423.816,403.854,409.684z"/>
+             <path class="st0" d="M247.023,189.177c9.9,4.854,25.644,13.86,43.893,32.1c18.25,18.25,27.247,33.993,32.1,43.884
+                c5.099,10.4,8.866,12.494,11.915,11.784c5.029-1.166,6.702-2.515,7.167-13.001c0.385-8.936-3.89-35.588-31.076-62.773
+                c-27.186-27.186-53.846-31.452-62.764-31.067c-10.496,0.447-11.828,2.129-12.992,7.175
+                C234.555,180.311,236.623,184.087,247.023,189.177z"/>
+              <path class="st0" d="M262.95,84.247c-12.808-0.009-16.042,7.92-16.428,10.995c-0.788,6.212,3.794,11.249,13.308,13.974
+                c10.881,3.11,53.986,16.935,90.099,53.048c36.122,36.113,49.956,79.226,53.057,90.107c2.716,9.506,7.744,14.08,13.964,13.3
+                c3.092-0.369,11.012-3.61,10.995-16.418c0.009-10.137-6.186-63.22-53.986-111.038C326.17,90.423,273.06,84.237,262.95,84.247z"/>
+              <path class="st0" d="M437.304,74.889C368.836,6.422,296.602,0.526,284.187,0.201c-15.157-0.385-21.167,6.414-21.158,13.387
+                c-0.009,5.94,6.08,12.046,15.139,14.377c13.597,3.486,67.495,11.976,130.784,75.266c63.307,63.29,71.78,117.197,75.284,130.803
+                c2.322,9.041,8.437,15.139,14.368,15.139c6.982,0,13.781-6.002,13.378-21.149C511.667,215.601,505.771,143.366,437.304,74.889z"/>
+          </svg>
+         <!-- متن -->
+          <span class="opacity-0 whitespace-nowrap overflow-hidden transition-opacity duration-300 group-hover:opacity-100">
+            تماس سریع
+         </span>
+       </a>
+         <span style="color:var(--muted)">09150284337</span>
+      </div>
+      <div class="flex flex-row mt-3">
+        <!-- Gmail Logo -->
+        <div class="w-11">
+           <svg class="ml-2 size-3px" xmlns="http://www.w3.org/2000/svg" aria-label="Gmail" role="img" viewBox="0 0 512 512"><rect width="512" height="512" rx="15%" fill="#ffffff"/>
+            <path d="M158 391v-142l-82-63V361q0 30 30 30" fill="#4285f4"/><path d="M 154 248l102 77l102-77v-98l-102 77l-102-77" fill="#ea4335"/><path d="M354 391v-142l82-63V361q0 30-30 30" fill="#34a853"/>
+            <path d="M76 188l82 63v-98l-30-23c-27-21-52 0-52 26" fill="#c5221f"/><path d="M436 188l-82 63v-98l30-23c27-21 52 0 52 26" fill="#fbbc04"/></svg>
+        </div>
+          <span style="color:var(--muted);cursor: pointer;" onclick="showModal()">memaryar.academy@gmail.com</span>
+      </div>
+
+      <div id="modalOverlay">
+        <div id="modalBox">
+          <button id="closeBtn">✖</button>
+          <p class="mt-5">آیا میخواهید Gmail خود را در Gmail Web ارسال کنید یا Gmail App؟</p>
+          <button onclick="openWeb()">Gmail Web</button>
+          <button onclick="openApp()">Gmail app</button>
+        </div>
+      </div>
+
+
+      <div class="flex flex-row mt-3">
+        <!-- Instagram Logo -->
+        <svg class="ml-2" width="1.75em" height="1.75em" viewBox="0 0 2500 2500" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="0" cx="332.14" cy="2511.81" r="3263.54" gradientUnits="userSpaceOnUse"><stop offset=".09" stop-color="#fa8f21"/><stop offset=".78" stop-color="#d82d7e"/>
+      </radialGradient><radialGradient id="1" cx="1516.14" cy="2623.81" r="2572.12" gradientUnits="userSpaceOnUse"><stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"/><stop offset="1" stop-color="#8c3aaa"/>
+        </radialGradient></defs><path d="M833.4,1250c0-230.11,186.49-416.7,416.6-416.7s416.7,186.59,416.7,416.7-186.59,416.7-416.7,416.7S833.4,1480.11,833.4,1250m-225.26,0c0,354.5,287.36,641.86,641.86,641.86S1891.86,1604.5,1891.86,1250,1604.5,608.14,1250,608.14,608.14,895.5,608.14,
+      1250M1767.27,582.69a150,150,0,1,0,150.06-149.94h-0.06a150.07,150.07,0,0,0-150,149.94M745,2267.47c-121.87-5.55-188.11-25.85-232.13-43-58.36-22.72-100-49.78-143.78-93.5s-70.88-85.32-93.5-143.68c-17.16-44-37.46-110.26-43-232.13-6.06-131.76-7.27-171.34-7.27-505.15s1.31-373.28
+      ,7.27-505.15c5.55-121.87,26-188,43-232.13,22.72-58.36,49.78-100,93.5-143.78s85.32-70.88,143.78-93.5c44-17.16,110.26-37.46,232.13-43,131.76-6.06,171.34-7.27,505-7.27s373.28,1.31,505.15,7.27c121.87,5.55,188,26,232.13,43,58.36,22.62,100,49.78,143.78,93.5s70.78,85.42,93.5,143.78c17.16,44,37.46
+      ,110.26,43,232.13,6.06,131.87,7.27,171.34,7.27,505.15s-1.21,373.28-7.27,505.15c-5.55,121.87-25.95,188.11-43,232.13-22.72,58.36-49.78,100-93.5,143.68s-85.42,70.78-143.78,93.5c-44,17.16-110.26,37.46-232.13,43-131.76,6.06-171.34,7.27-505.15,7.27s-373.28-1.21-505-7.27M734.65,7.57c-133.07,6.06-224,
+      27.16-303.41,58.06C349,97.54,279.38,140.35,209.81,209.81S97.54,349,65.63,431.24c-30.9,79.46-52,170.34-58.06,303.41C1.41,867.93,0,910.54,0,1250s1.41,382.07,7.57,515.35c6.06,133.08,27.16,223.95,58.06,303.41,31.91,82.19,74.62,152,144.18,221.43S349,2402.37,431.24,2434.37c79.56,30.9,170.34,52,303.41
+      ,58.06C868,2498.49,910.54,2500,1250,2500s382.07-1.41,515.35-7.57c133.08-6.06,223.95-27.16,303.41-58.06,82.19-32,151.86-74.72,221.43-144.18s112.18-139.24,144.18-221.43c30.9-79.46,52.1-170.34,58.06-303.41,6.06-133.38,7.47-175.89,7.47-515.35s-1.41-382.07-7.47-515.35c-6.06-133.08-27.16-224-58.06-303.41-32-82.19-74.72-151.86-144.18-221.43S2150.95,
+        97.54,2068.86,65.63c-79.56-30.9-170.44-52.1-303.41-58.06C1632.17,1.51,1589.56,0,1250.1,0S868,1.41,734.65,7.57" fill="url(#0)"/><path d="M833.4,1250c0-230.11,186.49-416.7,416.6-416.7s416.7,186.59,416.7,416.7-186.59,416.7-416.7,416.7S833.4,1480.11,833.4,1250m-225.26,0c0,354.5,287.36,641.86,641.86,641.86S1891.86,1604.5,1891.86,1250,1604.5,608.14,1250,
+      608.14,608.14,895.5,608.14,1250M1767.27,582.69a150,150,0,1,0,150.06-149.94h-0.06a150.07,150.07,0,0,0-150,149.94M745,2267.47c-121.87-5.55-188.11-25.85-232.13-43-58.36-22.72-100-49.78-143.78-93.5s-70.88-85.32-93.5-143.68c-17.16-44-37.46-110.26-43-232.13-6.06-131.76-7.27-171.34-7.27-505.15s1.31-373.28,7.27-505.15c5.55-121.87,26-188,43-232.13,22.72-58.36,49.78-100,
+      93.5-143.78s85.32-70.88,143.78-93.5c44-17.16,110.26-37.46,232.13-43,131.76-6.06,171.34-7.27,505-7.27s373.28,1.31,505.15,7.27c121.87,5.55,188,26,232.13,43,58.36,22.62,100,49.78,143.78,93.5s70.78,85.42,93.5,143.78c17.16,44,37.46,110.26,43,232.13,6.06,131.87,7.27,171.34,7.27,505.15s-1.21,373.28-7.27,505.15c-5.55,121.87-25.95,188.11-43,232.13-22.72,58.36-49.78,100-93.5
+      ,143.68s-85.42,70.78-143.78,93.5c-44,17.16-110.26,37.46-232.13,43-131.76,6.06-171.34,7.27-505.15,7.27s-373.28-1.21-505-7.27M734.65,7.57c-133.07,6.06-224,27.16-303.41,58.06C349,97.54,279.38,140.35,209.81,209.81S97.54,349,65.63,431.24c-30.9,79.46-52,170.34-58.06,303.41C1.41,867.93,0,910.54,0,1250s1.41,382.07,7.57,515.35c6.06,133.08,27.16,223.95,58.06,303.41,31.91,82.19
+      ,74.62,152,144.18,221.43S349,2402.37,431.24,2434.37c79.56,30.9,170.34,52,303.41,58.06C868,2498.49,910.54,2500,1250,2500s382.07-1.41,515.35-7.57c133.08-6.06,223.95-27.16,303.41-58.06,82.19-32,151.86-74.72,221.43-144.18s112.18-139.24,144.18-221.43c30.9-79.46,52.1-170.34,58.06-303.41,6.06-133.38,7.47-175.89,7.47-515.35s-1.41-382.07-7.47-515.35c-6.06-133.08-27.16-224-58.06-303.41-32-82.19-74.72-151.86-144.18-221.43S2150.95
+        ,97.54,2068.86,65.63c-79.56-30.9-170.44-52.1-303.41-58.06C1632.17,1.51,1589.56,0,1250.1,0S868,1.41,734.65,7.57" fill="url(#1)"/></svg>
+        <span style="color:var(--muted)">
+          <a href="https://www.instagram.com/memaryaracademy/" target="_blank">memaryaracademy</a>
+        </span>
+      </div>
+      <div class="flex flex-row mt-3">
+        <!-- Youtube Logo -->
+        <svg class="ml-2" width="2em" height="2em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#CD201F" fill-rule="evenodd" d="M9.522,15.553 L9.52125,8.80975 L16.00575,12.193 L9.522,15.553 Z M23.76,7.64125 C23.76,7.64125 23.52525,5.9875 22.806,5.25925 C21.89325,4.303 20.87025,4.2985 20.4015,4.243 C17.043,4 12.00525,4 12.00525,4 L11.99475,4 C11.99475,4 6.957,
+          4 3.5985,4.243 C3.129,4.2985 2.10675,4.303 1.19325,5.25925 C0.474,5.9875 0.24,7.64125 0.24,7.64125 C0.24,7.64125 0,9.58375 0,11.5255 L0,13.3465 C0,15.289 0.24,17.23075 0.24,17.23075 C0.24,17.23075 0.474,18.8845 1.19325,19.61275 C2.10675,20.569 3.306,20.539 3.84,20.63875 C5.76,
+          20.82325 12,20.88025 12,20.88025 C12,20.88025 17.043,20.87275 20.4015,20.62975 C20.87025,20.5735 21.89325,20.569 22.806,19.61275 C23.52525,18.8845 23.76,17.23075 23.76,17.23075 C23.76,17.23075 24,15.289 24,13.3465 L24,11.5255 C24,9.58375 23.76,7.64125 23.76,7.64125 L23.76,7.64125 Z"/>
+        </svg>
+        <span style="color:var(--muted)">
+          <a href="https://www.youtube.com/@memaryar.academy" target="_blank">memaryar.academy</a>
+        </span>
+      </div>
+    </div>
+    
+  </div>
+  <div style="text-align:center;padding:5em 0 0;color:var(--muted);font-size:13px">© 2025 معماریار — همه حقوق محفوظ است</div>
+</footer>
+<script src="./js/main.js"></script>
+</body>
+</html>
