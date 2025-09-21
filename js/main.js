@@ -187,5 +187,3 @@ function closeModal() {
  document.getElementById("modalOverlay").style.display = "none";
 }
 document.getElementById("closeBtn").addEventListener("click", closeModal);
-
-
