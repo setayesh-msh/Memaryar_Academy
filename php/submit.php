@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username   = "h330733_memaryar_user"; // نام کاربری دیتابیس
-$password   = "پسورد دیتابیس";         // رمز دیتابیس
+$password   = "Me*88*mar@yar";               // رمز دیتابیس
 $dbname     = "h330733_memaryar_db";   // نام دیتابیس
 
 // اتصال به دیتابیس
@@ -23,9 +23,17 @@ $stmt = $conn->prepare("INSERT INTO enrollment (FullName, NationalCode, PhoneNum
 $stmt->bind_param("ssss", $fullname, $nationalCode, $phone, $email);
 
 if ($stmt->execute()) {
-    echo "✅ ثبت‌نام با موفقیت انجام شد!";
+    // موفقیت: پیام + بازگشت به index.html
+    echo "<script>
+        alert('✅ ثبت‌نام با موفقیت انجام شد');
+        window.location.href='index.html';
+    </script>";
 } else {
-    echo "❌ خطا در ثبت‌نام: " . $stmt->error;
+    // خطا: پیام + بازگشت به index.html
+    echo "<script>
+        alert('❌ خطا در ثبت‌نام: " . $stmt->error . "');
+        window.location.href='index.html';
+    </script>";
 }
 
 $stmt->close();
