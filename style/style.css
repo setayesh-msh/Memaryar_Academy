@@ -123,7 +123,7 @@ nav.mainnav a:hover{ background:rgba(15,91,72,0.06); color:var(--green-dark); tr
 
 /* HERO CONTENT */
 .hero .hero-left{ z-index:4; width:58%; padding:48px 36px; }
-.hero h1{ font-size:40px; margin:0 0 10px; color:#252424; text-shadow:0 8px 26px rgba(10,20,10,0.6); letter-spacing:0.6px; font-weight:800; }
+.hero h1{ font-size:40px; margin:0 0 2em; color:#252424; text-shadow:0 8px 26px rgba(10,20,10,0.6); letter-spacing:0.6px; font-weight:800; }
 .hero p{ color:rgba(37,36,36,0.9); margin:0 0 18px; opacity:.95; font-weight:600; }
 .hero .ctas{ display:flex; gap:12px; }
 .btn{
@@ -169,7 +169,7 @@ nav.mainnav a:hover{ background:rgba(15,91,72,0.06); color:var(--green-dark); tr
 /* COURSES — کارت‌های یادداشت چسبان انیمیت‌شونده */
 .courses-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap:28px; align-items:start; }
 .sticky-wrap{ position:relative; width:100%; height:220px; display:flex; align-items:center; justify-content:center; }
-.sticky-bg{ position:absolute; width:84%; height:84%; border-radius:14px; transform:rotate(6deg); background:var(--green-mid); opacity:.18; left:8%; top:6%; }
+.sticky-bg{ position:absolute; width:84%; height:84%; border-radius:14px; transform:rotate(8deg); background-color:#bccfaf; opacity:.8; left:8%; top:6%; }
 .sticky-card{
   position:relative; width:84%; height:84%; background:var(--cream); border-radius:12px; box-shadow:0 18px 40px rgba(0,0,0,0.08); transition:transform var(--transition), box-shadow var(--transition); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:20px; cursor:pointer;
 }
